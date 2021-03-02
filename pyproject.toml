@@ -6,7 +6,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "sample-stream"
-version = "0.2.1"
+version = "0.2.2"
 description = "Sample lines from a stream."
 readme = "README.md"
 authors = [
@@ -34,8 +34,6 @@ sample = "sample_stream.__main__:main"
 [tool.poetry.dependencies]
 python = "^3.7"
 importlib_metadata = {version = "^3.7.0", python = "<3.8"}
-typer = {extras = ["all"], version = "^0.3.2"}
-rich = "^9.8.2"
 
 [tool.poetry.dev-dependencies]
 darglint = "^1.5.8"

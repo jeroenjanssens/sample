@@ -106,7 +106,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 name = "click"
 version = "7.1.2"
 description = "Composable command line interface toolkit"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
@@ -114,20 +114,9 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 name = "colorama"
 version = "0.4.4"
 description = "Cross-platform colored terminal text."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
-
-[[package]]
-name = "commonmark"
-version = "0.9.1"
-description = "Python parser for the CommonMark Markdown spec"
-category = "main"
-optional = false
-python-versions = "*"
-
-[package.extras]
-test = ["flake8 (==3.7.8)", "hypothesis (==3.55.3)"]
 
 [[package]]
 name = "darglint"
@@ -170,26 +159,26 @@ optional = false
 python-versions = "*"
 
 [[package]]
-name = "gitdb2"
-version = "3.0.3.post1"
+name = "gitdb"
+version = "4.0.5"
 description = "Git Object Database"
 category = "dev"
 optional = false
 python-versions = ">=3.4"
 
 [package.dependencies]
-smmap2 = ">=2,<3"
+smmap = ">=3.0.1,<4"
 
 [[package]]
 name = "gitpython"
-version = "3.0.9"
+version = "3.1.14"
 description = "Python Git Library"
 category = "dev"
 optional = false
 python-versions = ">=3.4"
 
 [package.dependencies]
-gitdb2 = ">=3,<4"
+gitdb = ">=4.0.1,<5"
 
 [[package]]
 name = "identify"
@@ -373,14 +362,6 @@ python-versions = ">=3.5"
 snowballstemmer = "*"
 
 [[package]]
-name = "pygments"
-version = "2.8.0"
-description = "Pygments is a syntax highlighting package written in Python."
-category = "main"
-optional = false
-python-versions = ">=3.5"
-
-[[package]]
 name = "pylint"
 version = "2.7.2"
 description = "python code static checker"
@@ -474,23 +455,6 @@ security = ["pyOpenSSL (>=0.14)", "cryptography (>=1.3.4)"]
 socks = ["PySocks (>=1.5.6,!=1.5.7)", "win-inet-pton"]
 
 [[package]]
-name = "rich"
-version = "9.12.4"
-description = "Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal"
-category = "main"
-optional = false
-python-versions = ">=3.6,<4.0"
-
-[package.dependencies]
-colorama = ">=0.4.0,<0.5.0"
-commonmark = ">=0.9.0,<0.10.0"
-pygments = ">=2.6.0,<3.0.0"
-typing-extensions = ">=3.7.4,<4.0.0"
-
-[package.extras]
-jupyter = ["ipywidgets (>=7.5.1,<8.0.0)"]
-
-[[package]]
 name = "safety"
 version = "1.10.3"
 description = "Checks installed dependencies for known vulnerabilities."
@@ -505,14 +469,6 @@ packaging = "*"
 requests = "*"
 
 [[package]]
-name = "shellingham"
-version = "1.4.0"
-description = "Tool to Detect Surrounding Shell"
-category = "main"
-optional = false
-python-versions = "!=3.0,!=3.1,!=3.2,!=3.3,>=2.6"
-
-[[package]]
 name = "six"
 version = "1.15.0"
 description = "Python 2 and 3 compatibility utilities"
@@ -522,15 +478,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 
 [[package]]
 name = "smmap"
-version = "4.0.0"
-description = "A pure Python implementation of a sliding window memory map manager"
-category = "dev"
-optional = false
-python-versions = ">=3.5"
-
-[[package]]
-name = "smmap2"
-version = "2.0.5"
+version = "3.0.5"
 description = "A pure Python implementation of a sliding window memory map manager"
 category = "dev"
 optional = false
@@ -579,25 +527,6 @@ description = "a fork of Python 2 and 3 ast modules with type comment support"
 category = "dev"
 optional = false
 python-versions = "*"
-
-[[package]]
-name = "typer"
-version = "0.3.2"
-description = "Typer, build great CLIs. Easy to code. Based on Python type hints."
-category = "main"
-optional = false
-python-versions = ">=3.6"
-
-[package.dependencies]
-click = ">=7.1.1,<7.2.0"
-colorama = {version = ">=0.4.3,<0.5.0", optional = true, markers = "extra == \"all\""}
-shellingham = {version = ">=1.3.0,<2.0.0", optional = true, markers = "extra == \"all\""}
-
-[package.extras]
-test = ["pytest-xdist (>=1.32.0,<2.0.0)", "pytest-sugar (>=0.9.4,<0.10.0)", "mypy (==0.782)", "black (>=19.10b0,<20.0b0)", "isort (>=5.0.6,<6.0.0)", "shellingham (>=1.3.0,<2.0.0)", "pytest (>=4.4.0,<5.4.0)", "pytest-cov (>=2.10.0,<3.0.0)", "coverage (>=5.2,<6.0)"]
-all = ["colorama (>=0.4.3,<0.5.0)", "shellingham (>=1.3.0,<2.0.0)"]
-dev = ["autoflake (>=1.3.1,<2.0.0)", "flake8 (>=3.8.3,<4.0.0)"]
-doc = ["mkdocs (>=1.1.2,<2.0.0)", "mkdocs-material (>=5.4.0,<6.0.0)", "markdown-include (>=0.5.1,<0.6.0)"]
 
 [[package]]
 name = "typing-extensions"
@@ -662,7 +591,7 @@ testing = ["pytest (>=3.5,!=3.7.3)", "pytest-checkdocs (>=1.2.3)", "pytest-flake
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "2ae8d71e5f2e35493f2bf95acb7060ae21a438e0568f7d25920ad1792a25b1d9"
+content-hash = "20f830a1edd2e194b8dff9c404efa8bde6fe8ca6b62a9b9a887ab4ba53a3d1aa"
 
 [metadata.files]
 appdirs = [
@@ -708,10 +637,6 @@ colorama = [
     {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},
     {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
 ]
-commonmark = [
-    {file = "commonmark-0.9.1-py2.py3-none-any.whl", hash = "sha256:da2f38c92590f83de410ba1a3cbceafbc74fee9def35f9251ba9a971d6d66fd9"},
-    {file = "commonmark-0.9.1.tar.gz", hash = "sha256:452f9dc859be7f06631ddcb328b6919c67984aca654e5fefb3914d54691aed60"},
-]
 darglint = [
     {file = "darglint-1.7.0-py3-none-any.whl", hash = "sha256:3bf16e78e2909ecdb737afd45fcd6a3f8993b092c2ba2b7cd7b179cceee87a43"},
     {file = "darglint-1.7.0.tar.gz", hash = "sha256:e49b36ac9b4272a9a988b508d23e9f31c29f80a5fc030f1023b46740b5deab31"},
@@ -728,13 +653,13 @@ filelock = [
     {file = "filelock-3.0.12-py3-none-any.whl", hash = "sha256:929b7d63ec5b7d6b71b0fa5ac14e030b3f70b75747cef1b10da9b879fef15836"},
     {file = "filelock-3.0.12.tar.gz", hash = "sha256:18d82244ee114f543149c66a6e0c14e9c4f8a1044b5cdaadd0f82159d6a6ff59"},
 ]
-gitdb2 = [
-    {file = "gitdb2-3.0.3.post1-py2.py3-none-any.whl", hash = "sha256:f4c17cc3389772557b624e0208ed7cb854c6d7e95962da81e3a3ccd32f7c4b2e"},
-    {file = "gitdb2-3.0.3.post1.tar.gz", hash = "sha256:d6983efcd8284c7ccd4c5851aac5b78a1b63f7f53918a1b386957f4a68c8fad3"},
+gitdb = [
+    {file = "gitdb-4.0.5-py3-none-any.whl", hash = "sha256:91f36bfb1ab7949b3b40e23736db18231bf7593edada2ba5c3a174a7b23657ac"},
+    {file = "gitdb-4.0.5.tar.gz", hash = "sha256:c9e1f2d0db7ddb9a704c2a0217be31214e91a4fe1dea1efad19ae42ba0c285c9"},
 ]
 gitpython = [
-    {file = "GitPython-3.0.9-py3-none-any.whl", hash = "sha256:ecf785b0b23bb6d28f5fff3d67cc4a07cb607e94476495d2a943d2e57d9fd473"},
-    {file = "GitPython-3.0.9.tar.gz", hash = "sha256:7e5df21bfef38505115ad92544fb379e6fedb2753f3b709174c4358cecd0cb97"},
+    {file = "GitPython-3.1.14-py3-none-any.whl", hash = "sha256:3283ae2fba31c913d857e12e5ba5f9a7772bbc064ae2bb09efafa71b0dd4939b"},
+    {file = "GitPython-3.1.14.tar.gz", hash = "sha256:be27633e7509e58391f10207cd32b2a6cf5b908f92d9cd30da2e514e1137af61"},
 ]
 identify = [
     {file = "identify-2.0.0-py2.py3-none-any.whl", hash = "sha256:9cdd81e5d2b6e76c3006d5226316dd947bd6324fbeebb881bec489202fa09d3a"},
@@ -838,10 +763,6 @@ pydocstyle = [
     {file = "pydocstyle-5.1.1-py3-none-any.whl", hash = "sha256:aca749e190a01726a4fb472dd4ef23b5c9da7b9205c0a7857c06533de13fd678"},
     {file = "pydocstyle-5.1.1.tar.gz", hash = "sha256:19b86fa8617ed916776a11cd8bc0197e5b9856d5433b777f51a3defe13075325"},
 ]
-pygments = [
-    {file = "Pygments-2.8.0-py3-none-any.whl", hash = "sha256:b21b072d0ccdf29297a82a2363359d99623597b8a265b8081760e4d0f7153c88"},
-    {file = "Pygments-2.8.0.tar.gz", hash = "sha256:37a13ba168a02ac54cc5891a42b1caec333e59b66addb7fa633ea8a6d73445c0"},
-]
 pylint = [
     {file = "pylint-2.7.2-py3-none-any.whl", hash = "sha256:d09b0b07ba06bcdff463958f53f23df25e740ecd81895f7d2699ec04bbd8dc3b"},
     {file = "pylint-2.7.2.tar.gz", hash = "sha256:0e21d3b80b96740909d77206d741aa3ce0b06b41be375d92e1f3244a274c1f8a"},
@@ -928,29 +849,17 @@ requests = [
     {file = "requests-2.25.1-py2.py3-none-any.whl", hash = "sha256:c210084e36a42ae6b9219e00e48287def368a26d03a048ddad7bfee44f75871e"},
     {file = "requests-2.25.1.tar.gz", hash = "sha256:27973dd4a904a4f13b263a19c866c13b92a39ed1c964655f025f3f8d3d75b804"},
 ]
-rich = [
-    {file = "rich-9.12.4-py3-none-any.whl", hash = "sha256:4654e20bc44c0b21e387b58edaf073325e5d12f8e482b70db7d1dd7a4949f6f0"},
-    {file = "rich-9.12.4.tar.gz", hash = "sha256:1e000895221df23cd7f828a9511c15d10189850d4f923b6d8c3d29a32ca95265"},
-]
 safety = [
     {file = "safety-1.10.3-py2.py3-none-any.whl", hash = "sha256:5f802ad5df5614f9622d8d71fedec2757099705c2356f862847c58c6dfe13e84"},
     {file = "safety-1.10.3.tar.gz", hash = "sha256:30e394d02a20ac49b7f65292d19d38fa927a8f9582cdfd3ad1adbbc66c641ad5"},
-]
-shellingham = [
-    {file = "shellingham-1.4.0-py2.py3-none-any.whl", hash = "sha256:536b67a0697f2e4af32ab176c00a50ac2899c5a05e0d8e2dadac8e58888283f9"},
-    {file = "shellingham-1.4.0.tar.gz", hash = "sha256:4855c2458d6904829bd34c299f11fdeed7cfefbf8a2c522e4caea6cd76b3171e"},
 ]
 six = [
     {file = "six-1.15.0-py2.py3-none-any.whl", hash = "sha256:8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"},
     {file = "six-1.15.0.tar.gz", hash = "sha256:30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259"},
 ]
 smmap = [
-    {file = "smmap-4.0.0-py2.py3-none-any.whl", hash = "sha256:a9a7479e4c572e2e775c404dcd3080c8dc49f39918c2cf74913d30c4c478e3c2"},
-    {file = "smmap-4.0.0.tar.gz", hash = "sha256:7e65386bd122d45405ddf795637b7f7d2b532e7e401d46bbe3fb49b9986d5182"},
-]
-smmap2 = [
-    {file = "smmap2-2.0.5-py2.py3-none-any.whl", hash = "sha256:0555a7bf4df71d1ef4218e4807bbf9b201f910174e6e08af2e138d4e517b4dde"},
-    {file = "smmap2-2.0.5.tar.gz", hash = "sha256:29a9ffa0497e7f2be94ca0ed1ca1aa3cd4cf25a1f6b4f5f87f74b46ed91d609a"},
+    {file = "smmap-3.0.5-py2.py3-none-any.whl", hash = "sha256:7bfcf367828031dc893530a29cb35eb8c8f2d7c8f2d0989354d75d24c8573714"},
+    {file = "smmap-3.0.5.tar.gz", hash = "sha256:84c2751ef3072d4f6b2785ec7ee40244c6f45eb934d9e543e2c51f1bd3d54c50"},
 ]
 snowballstemmer = [
     {file = "snowballstemmer-2.1.0-py2.py3-none-any.whl", hash = "sha256:b51b447bea85f9968c13b650126a888aabd4cb4463fca868ec596826325dedc2"},
@@ -999,10 +908,6 @@ typed-ast = [
     {file = "typed_ast-1.4.2-cp39-cp39-win32.whl", hash = "sha256:cc7b98bf58167b7f2db91a4327da24fb93368838eb84a44c472283778fc2446b"},
     {file = "typed_ast-1.4.2-cp39-cp39-win_amd64.whl", hash = "sha256:7147e2a76c75f0f64c4319886e7639e490fee87c9d25cb1d4faef1d8cf83a440"},
     {file = "typed_ast-1.4.2.tar.gz", hash = "sha256:9fc0b3cb5d1720e7141d103cf4819aea239f7d136acf9ee4a69b047b7986175a"},
-]
-typer = [
-    {file = "typer-0.3.2-py3-none-any.whl", hash = "sha256:ba58b920ce851b12a2d790143009fa00ac1d05b3ff3257061ff69dbdfc3d161b"},
-    {file = "typer-0.3.2.tar.gz", hash = "sha256:5455d750122cff96745b0dec87368f56d023725a7ebc9d2e54dd23dc86816303"},
 ]
 typing-extensions = [
     {file = "typing_extensions-3.7.4.3-py2-none-any.whl", hash = "sha256:dafc7639cde7f1b6e1acc0f457842a83e722ccca8eef5270af2d74792619a89f"},
