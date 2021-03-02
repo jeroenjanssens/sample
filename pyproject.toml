@@ -6,7 +6,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "sample-stream"
-version = "0.2.2"
+version = "0.2.3"
 description = "Sample lines from a stream."
 readme = "README.md"
 authors = [
