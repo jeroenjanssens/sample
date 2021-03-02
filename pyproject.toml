@@ -6,7 +6,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "sample-stream"
-version = "0.2.0"
+version = "0.2.1"
 description = "Sample lines from a stream."
 readme = "README.md"
 authors = [
@@ -29,7 +29,7 @@ classifiers = [  # Update me
 
 [tool.poetry.scripts]
 # Entry points for the package https://python-poetry.org/docs/pyproject/#scripts
-"sample-stream" = "sample_stream.__main__:main"
+sample = "sample_stream.__main__:main"
 
 [tool.poetry.dependencies]
 python = "^3.7"
