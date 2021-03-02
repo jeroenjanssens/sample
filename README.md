@@ -25,7 +25,7 @@ You can install `sample-stream` as follows:
 $ python -m pip install sample-stream
 ```
 
-This will install an executable `sample` in `~/.local/bin`. You probably want to either add this directory to your `PATH` or create an alias to this executable in a directory which already is on your `PATH`.
+This will install an executable `sample` in `~/.local/bin`. You probably want to either (1) add this directory to your `PATH`, (2) create a symlink to this executable in a directory which already is on your `PATH`, or (3) use an alias.
 
 
 ## Example
