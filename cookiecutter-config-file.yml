@@ -1,0 +1,10 @@
+# This file contains values from Cookiecutter
+
+default_context:
+  project_name: "sample-stream"
+  project_description: "Sample lines from a stream."
+  organization: "Jeroen Janssens"
+  license: "MIT"
+  version: "0.1.0"
+  github_name: "jeroenjanssens"
+  email: "jeroen@jeroenjanssens.com"
