@@ -49,12 +49,13 @@ sample -r 1% -d 1000 -s 5  0.06s user 0.02s system 1% cpu 5.091 total
 
 ```console
 $ sample --help
-usage: sample [-h] [-W WEEKS] [-D DAYS] [-H HOURS] [-m MINUTES] [-s SECONDS]
-              [-t MILLISECONDS] [-u MICROSECONDS] [-r RATE] [-d DELAY]
-              [FILE]
+usage: sample-stream [-h] [-W WEEKS] [-D DAYS] [-H HOURS] [-m MINUTES]
+                     [-s SECONDS] [-t MILLISECONDS] [-u MICROSECONDS]
+                     [-r RATE] [-d DELAY]
+                     [FILE]
 
-Output lines from stdin to stdout with a given probability for a given duration, and with
-a given delay between lines.
+Filter lines from standard input according to some probability, with a
+given delay, and for a certain duration.
 
 positional arguments:
   FILE                  File
@@ -74,9 +75,11 @@ optional arguments:
                         Duration of sampling in milliseconds
   -u MICROSECONDS, --microseconds MICROSECONDS
                         Duration of sampling in microseconds
-  -r RATE, --rate RATE  Rate between 0 and 1 using either 0.33, 33%, 1/3 notation.
+  -r RATE, --rate RATE  Rate between 0 and 1 using either 0.33, 33%,
+                        1/3 notation.
   -d DELAY, --delay DELAY
-                        Time in milliseconds between each line of output
+                        Time in milliseconds between each line of
+                        output
 ```
 
 
@@ -95,7 +98,7 @@ This project is licensed under the terms of the `MIT` license. See [LICENSE](htt
   title = {{sample-stream} -- Sample lines from a stream},
   year = {2021},
   url = {https://github.com/jeroenjanssens/sample-stream},
-  version = {0.2.0}
+  version = {0.2.4}
 }
 ```
 

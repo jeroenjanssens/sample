@@ -14,8 +14,8 @@ def total_seconds(delta):
 def main():
     parser = argparse.ArgumentParser(
         description=(
-            "Output lines from stdin to stdout with a given probability "
-            "for a given duration, and with a given delay between lines."
+            "Filter lines from standard input according to some probability, "
+            "with a given delay, and for a certain duration."
         )
     )
     parser.add_argument(

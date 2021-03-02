@@ -6,8 +6,8 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "sample-stream"
-version = "0.2.3"
-description = "Sample lines from a stream."
+version = "0.2.4"
+description = "Filter lines from standard input according to some probability, with a given delay, and for a certain duration."
 readme = "README.md"
 authors = [
   "Jeroen Janssens <jeroen@jeroenjanssens.com>"
