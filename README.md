@@ -98,7 +98,7 @@ This project is licensed under the terms of the `MIT` license. See [LICENSE](htt
   title = {{sample-stream} -- Sample lines from a stream},
   year = {2021},
   url = {https://github.com/jeroenjanssens/sample-stream},
-  version = {0.2.4}
+  version = {0.2.5}
 }
 ```
 
