@@ -21,7 +21,7 @@ def main():
     parser.add_argument(
         "file",
         nargs="?",
-        type=argparse.FileType("rb"),
+        type=argparse.FileType("r"),
         default=stdin,
         help="File",
         metavar="FILE",
